@@ -2,3 +2,7 @@
 	path = 2025-S1/learning-ml-text-recognition
 	url = https://github.com/mvodya/learning-ml-text-recognition.git
 	branch = main
+[submodule "2025-S1/3d-course-blender"]
+	path = 2025-S1/3d-course-blender
+	url = https://github.com/mvodya/3d-course-blender.git
+	branch = master
