@@ -28,8 +28,8 @@
 
 - 2025
   - Осенний семестр (S1)
-    - [3D Моделирование для профессиональной деятельности](2025-S1/3d-course-blender/README.md)
-    - [Введение в машинное обучение](2025-S1/learning-ml-text-recognition/README.md)
+    - [3D Моделирование для профессиональной деятельности](https://github.com/mvodya/3d-course-blender/tree/b66d8c5eb315f0260f8e27ed3e60412d9416c92d)
+    - [Введение в машинное обучение](https://github.com/mvodya/learning-ml-text-recognition/)
   - Весенний семестр (S2)
     - [Веб разработка](2025-S2/web-frontend-programming/)
     - [Информатика и программирование](2025-S2/cs-programming/README.md)
