@@ -33,3 +33,4 @@
   - Весенний семестр (S2)
     - [Веб разработка](2025-S2/web-frontend-programming/)
     - [Информатика и программирование](2025-S2/cs-programming/README.md)
+    - [Анализ сигналов и изображений](2025-S2/signal-image-analysis/README.md)
