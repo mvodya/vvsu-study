@@ -99,11 +99,10 @@
       position: absolute;
       top: 40px;
       left: 35px;
-      width: 0;
-      height: 0;
-      border-left: 10px solid orange;
-      border-top: 5px solid transparent;
-      border-bottom: 5px solid transparent;
+      width: 30px;
+      height: 15px;
+      background: orange;
+      clip-path: polygon(0 0, 100% 50%, 0 100%);
       transform: rotate(10deg);
     }
 
