@@ -6,3 +6,6 @@
 	path = 2025-S1/3d-course-blender
 	url = https://github.com/mvodya/3d-course-blender.git
 	branch = master
+[submodule "extra/vvsu-latex"]
+	path = extra/vvsu-latex
+	url = https://github.com/mvodya/vvsu-latex.git
