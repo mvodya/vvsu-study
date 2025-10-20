@@ -1,1 +1,1 @@
-/Volumes/SSD/mark/Documents/Projects/vvsu-study/extra/vvsu-latex/vvsu.cls
+../../../../extra/vvsu-latex/vvsu.cls
