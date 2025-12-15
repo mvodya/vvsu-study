@@ -28,14 +28,16 @@
 
 [Теория](06-js.md) // [Лабораторная работа 6](labs/lab6.md)
 
-### 7. Работа с React
+### 7. Работа с React (NextJS)
+
+[Теория](07-react.md) // TODO
+
+### 8. <s>SPA приложение на React (NextJS)</s>
 
 TODO
 
-### 8. Основы React
+### 8. <s>API сервер на NodeJS (Express JS)</s>
 
 TODO
 
-### 9. SPA на React
-
-TODO
+> ⚠️ Тема 8 для разных групп своя (TODO)
