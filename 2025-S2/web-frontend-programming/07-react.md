@@ -12,7 +12,7 @@
 
 ### Открытие терминала
 
-Работа с Next.js всегда начинается из терминала
+Работа с Next.js начинается из терминала
 
 Варианты:
 
@@ -33,14 +33,14 @@
 Команда для создания проекта:
 
 ```bash
-npx create-next-app@latest my-app -e with-tailwindcss
+npx create-next-app@latest my-app
 ```
 
 Что происходит:
 
 * `npx` - временно запускает пакет без установки
 * `create-next-app` - официальный генератор Next.js
-* `my-app` - имя папки проекта
+* `my-app` - имя папки проекта (можно свое)
 * `with-tailwindcss` - готовая настройка Tailwind
 
 После выполнения команды:
@@ -82,7 +82,7 @@ React-компонент - это обычная JavaScript-функция, ко
 * принимает данные (props)
 * возвращает JSX (разметку)
 
-```ts
+```jsx
 function Hello() {
   return <p>Привет</p>;
 }
@@ -98,11 +98,13 @@ app/page.tsx
 
 Экспортирует компонент страницы:
 
-```ts
+```jsx
 export default function HomePage() {
   return <h1>Главная страница</h1>;
 }
 ```
+
+Обратите внимание, что по-умолчанию используется расширение `.tsx` - подмножество TypeScript. Вы можете переименовать файл в расширение с `.jsx`, чтобы переключится на JSX и убрать лишние предупреждения
 
 ### JSX
 
@@ -110,7 +112,7 @@ JSX - это синтаксис, который выглядит как HTML, н
 
 Пример:
 
-```tsx
+```jsx
 const title = "React";
 
 <h1>{title}</h1>
@@ -126,7 +128,7 @@ const title = "React";
 
 В одном файле можно описывать несколько компонентов
 
-```tsx
+```jsx
 export default function HomePage() {
   return (
     <main>
@@ -160,7 +162,7 @@ app/components/
 
 Пример компонента:
 
-```tsx
+```jsx
 export default function MyButton() {
   return <button>Кнопка</button>;
 }
@@ -168,7 +170,7 @@ export default function MyButton() {
 
 Импорт:
 
-```ts
+```js
 import MyButton from "@/components/MyButton";
 ```
 
@@ -180,13 +182,13 @@ import MyButton from "@/components/MyButton";
 
 ## Клиентские компоненты и интерактивность
 
-### Почему нужен `"use client"`
+### Почему нужен `"use client";`
 
 По умолчанию компоненты в Next.js - **серверные** (без доступа к событиям, состоянию, браузеру)
 
 Для интерактивности нужен клиентский компонент:
 
-```ts
+```js
 "use client";
 ```
 
@@ -226,24 +228,40 @@ export default function CounterButton() {
 
 Компонент может принимать данные через параметры:
 
-```tsx
-function Display({ value }: { value: number }) {
+```jsx
+function Display({ value }) {
   return <div>{value}</div>;
 }
 ```
 
 Использование:
 
-```tsx
+```jsx
 <Display value={count} />
 ```
+
+Обратите внимание, что в списке параметров `function Display({ value }) ...` а не просто `function Display(value) ...`. Параметры компонентов передаются через props одним объектом. Следующий код аналогичен прошлому и будет работать:
+
+```jsx
+function Display(props) {
+  return <div>{props.value}</div>;
+}
+```
+
+Использование:
+
+```jsx
+<Display value={count} />
+```
+
+Однако вариант с `function Display({ value }) ...` предпочтительнее, т.к. при использовании множества аргументов, проще понять, что именно принимает компонент
 
 ### Передача функций
 
 Функции передаются так же, как значения:
 
-```tsx
-function Button({ onClick }: { onClick: () => void }) {
+```jsx
+function Button({ onClick }) {
   return <button onClick={onClick}>+</button>;
 }
 ```
@@ -290,7 +308,7 @@ app/
 
 Страница - обычный React-компонент:
 
-```tsx
+```jsx
 export default function CalculatorPage() {
   return <h1>Калькулятор</h1>;
 }
@@ -302,16 +320,22 @@ export default function CalculatorPage() {
 
 Значение input контролируется состоянием:
 
-```tsx
+```jsx
 <input value={value} onChange={handle} />
 ```
 
 Обработчик:
 
-```ts
-const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
+```js
+const handle = (e) => {
   setValue(Number(e.target.value));
 };
+```
+
+Как вариант, простой обработчик можно сразу разместить в лямбда функции (в особенности, если этот обработчик больше нигде не используется):
+
+```jsx
+<input value={value} onChange={(e) => setValue(Number(e.target.value))} />
 ```
 
 ### Ограничение ввода (JS-логика)
@@ -324,8 +348,8 @@ React лишь дает событие `onChange`, а дальше мы рабо
 
 В обработчике события мы получаем объект события `e`
 
-```ts
-const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
+```jsx
+const handle = (e) => {
   console.log(e.target.value);
 };
 ```
@@ -339,8 +363,8 @@ const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
 
 Самый простой и понятный вариант - проверить каждый символ
 
-```ts
-const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
+```jsx
+const handle = (e) => {
   const value = e.target.value;
 
   if (value === "" || !isNaN(Number(value))) {
@@ -359,8 +383,8 @@ const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
 
 ##### Пример: Ввод только одной цифры (0–9)
 
-```ts
-const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
+```js
+const handle = (e) => {
   const value = e.target.value;
 
   if (value.length <= 1 && value >= "0" && value <= "9") {
@@ -378,8 +402,8 @@ const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
 
 Если пользователь вставил текст целиком - можно взять только первый символ:
 
-```ts
-const handle = (e: React.ChangeEvent<HTMLInputElement>) => {
+```js
+const handle = (e) => {
   const value = e.target.value;
   const firstChar = value[0];
 
