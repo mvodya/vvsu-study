@@ -30,7 +30,7 @@
 
 ### 7. Работа с React (NextJS)
 
-[Теория](07-react.md) // TODO
+[Теория](07-react.md) // [Лабораторная работа 7](labs/lab7.md)
 
 ### 8. <s>SPA приложение на React (NextJS)</s>
 
