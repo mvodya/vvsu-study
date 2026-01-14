@@ -2,23 +2,23 @@
 
 ## Пары и группы
 
-### Веб разработка
+### Веб разработка [(баллы)](https://docs.google.com/spreadsheets/d/11do3ZK8onTleRB1D8Dncm6Dim8iZQweuDfAzAs7BTBI)
 
 - [БПМ-25-ИА1](2025-S2/web-frontend-programming/README.md)
 - [ББИ-25-БА1](2025-S2/web-frontend-programming/README.md)
 
-### Веб программирование
+### Веб программирование [(баллы)](https://docs.google.com/spreadsheets/d/11do3ZK8onTleRB1D8Dncm6Dim8iZQweuDfAzAs7BTBI)
 
 - [БДЗ-23-ЦД1](2025-S2/web-frontend-programming/README.md)
 - [БДЗ-23-ЦД2](2025-S2/web-frontend-programming/README.md)
 
-### Информатика и программирование
+### Информатика и программирование [(баллы)](https://docs.google.com/spreadsheets/d/1iEfyjNnF81leZ1xF30AFk-k-WdRzNFu6HSMxyhHqQJU)
 
 - [БИН-25-2](2025-S2/cs-programming/README.md)
 - [БИН-25-3](2025-S2/cs-programming/README.md)
 - [БИС-25-3](2025-S2/cs-programming/README.md)
 
-### Анализ сигналов и изображений
+### Анализ сигналов и изображений [(баллы)](https://docs.google.com/spreadsheets/d/1VoBv97fJWF32zyMQyoTjNiZTQHjQ1HZvMHqUjXynSVQ)
 
 - [МПИ-24-ИИ1](2025-S2/signal-image-analysis/README.md)
 
