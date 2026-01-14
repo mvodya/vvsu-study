@@ -36,8 +36,8 @@
 
 TODO
 
-### 8. <s>API сервер на NodeJS (Express JS)</s>
+### 8. API сервер на NodeJS (Express JS)
 
-TODO
+[Теория](08-api-server.md) // [Лабораторная работа 8](labs/lab8-api.md)
 
 > ⚠️ Тема 8 для разных групп своя (TODO)
