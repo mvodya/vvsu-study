@@ -9,8 +9,6 @@
 #include <string>
 #include <vector>
 
-namespace {
-
 struct ScooterModel {
   std::string name;
   double minMileage;
@@ -53,7 +51,7 @@ std::string makeId(int number) {
 
 // Generate scooters records
 std::vector<ScooterRecord> generateScooters() {
-  constexpr int recordCount{220};
+  constexpr int recordCount = 220;
 
   // Scooter models
   const std::array<ScooterModel, 10> models{{
@@ -70,33 +68,38 @@ std::vector<ScooterRecord> generateScooters() {
   }};
 
   // Fixed seed for stable generation
-  std::mt19937 random{20260910U};
+  std::mt19937 random = std::mt19937{20260910U};
 
   // Battery percent from almost empty to full
-  std::uniform_int_distribution<int> batteryDistribution{5, 100};
+  std::uniform_int_distribution<int> batteryDistribution =
+      std::uniform_int_distribution<int>{5, 100};
 
   // Base fault probability
-  std::bernoulli_distribution faultDistribution{0.13};
+  std::bernoulli_distribution faultDistribution =
+      std::bernoulli_distribution{0.13};
 
   // Random scooter model index
-  std::uniform_int_distribution<int> modelDistribution{
-      0, static_cast<int>(models.size()) - 1};
+  std::uniform_int_distribution<int> modelDistribution =
+      std::uniform_int_distribution<int>{0,
+                                         static_cast<int>(models.size()) - 1};
 
   // Mileage around service threshold
-  std::normal_distribution<double> serviceMileageDistribution{1650.0, 260.0};
+  std::normal_distribution<double> serviceMileageDistribution =
+      std::normal_distribution<double>{1650.0, 260.0};
 
   std::vector<ScooterRecord> scooters;
   scooters.reserve(recordCount);
 
   // Make records
-  for (int index{1}; index <= recordCount; index++) {
+  for (int index = 1; index <= recordCount; index++) {
     // Pick model first, because mileage range depends on model
     const auto &model =
         models[static_cast<std::size_t>(modelDistribution(random))];
 
     // Usual mileage for selected model
-    std::uniform_real_distribution<double> mileageDistribution{
-        model.minMileage, model.maxMileage};
+    std::uniform_real_distribution<double> mileageDistribution =
+        std::uniform_real_distribution<double>{model.minMileage,
+                                               model.maxMileage};
 
     double mileage = mileageDistribution(random);
 
@@ -179,8 +182,6 @@ std::filesystem::path outputDirectoryFromArguments(int argc, char *argv[]) {
 
   return std::filesystem::path{CPP_COURSE_LABS_DIR} / "01-cpp-foundations";
 }
-
-} // namespace
 
 int main(int argc, char *argv[]) {
   try {

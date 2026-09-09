@@ -26,4 +26,5 @@ cmake --build "$BUILD_DIR"
 
 if [[ "$RUN_GENERATORS" -eq 1 ]]; then
     "$BUILD_DIR/generators/01-cpp-foundations/generate_lab_01_data" "$LABS_DIR/01-cpp-foundations"
+    "$BUILD_DIR/generators/03-lifetime-raii/generate_lab_03_data" "$LABS_DIR/03-lifetime-raii"
 fi
