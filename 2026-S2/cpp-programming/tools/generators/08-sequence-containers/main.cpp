@@ -323,6 +323,9 @@ void writePassengers(const std::filesystem::path &filePath,
 
 // Generate all passenger files
 void generatePassengerFiles(const std::filesystem::path &outputDirectory) {
+  const auto datasetsDirectory = outputDirectory / "datasets";
+  std::filesystem::create_directories(datasetsDirectory);
+
   const std::array<PassengerFile, 6> files{{
       {"passengers_small.txt", 36, 1U, false, false},
       {"passengers_medium.txt", 180, 2U, false, false},
@@ -333,7 +336,7 @@ void generatePassengerFiles(const std::filesystem::path &outputDirectory) {
   }};
 
   for (const auto &file : files) {
-    writePassengers(outputDirectory / file.fileName, generatePassengers(file));
+    writePassengers(datasetsDirectory / file.fileName, generatePassengers(file));
   }
 }
 

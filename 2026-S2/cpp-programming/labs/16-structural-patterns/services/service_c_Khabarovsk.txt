@@ -1,0 +1,4 @@
+name: Khabarovsk
+temp_kelvin: 294.4
+wind_kmh: 13.7
+humidity_percent: 58

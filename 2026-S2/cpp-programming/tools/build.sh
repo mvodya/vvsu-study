@@ -31,4 +31,9 @@ if [[ "$RUN_GENERATORS" -eq 1 ]]; then
     "$BUILD_DIR/generators/05-function-templates/generate_lab_05_data" "$LABS_DIR/05-function-templates"
     "$BUILD_DIR/generators/07-error-handling/generate_lab_07_data" "$LABS_DIR/07-error-handling"
     "$BUILD_DIR/generators/08-sequence-containers/generate_lab_08_data" "$LABS_DIR/08-sequence-containers"
+    "$BUILD_DIR/generators/09-associative-containers/generate_lab_09_data" "$LABS_DIR/09-associative-containers"
+    "$BUILD_DIR/generators/10-algorithms-lambdas/generate_lab_10_data" "$LABS_DIR/10-algorithms-lambdas"
+    "$BUILD_DIR/generators/11-iterators-ranges/generate_lab_11_data" "$LABS_DIR/11-iterators-ranges"
+    "$BUILD_DIR/generators/15-behavioral-patterns/generate_lab_15_data" "$LABS_DIR/15-behavioral-patterns"
+    "$BUILD_DIR/generators/16-structural-patterns/generate_lab_16_data" "$LABS_DIR/16-structural-patterns"
 fi

@@ -1,0 +1,4 @@
+city=Ussuriysk
+temperature_c=19.7
+wind_ms=4.5
+humidity=68

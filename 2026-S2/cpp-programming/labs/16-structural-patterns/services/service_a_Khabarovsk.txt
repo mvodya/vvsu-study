@@ -1,0 +1,4 @@
+city=Khabarovsk
+temperature_c=21.3
+wind_ms=3.8
+humidity=58

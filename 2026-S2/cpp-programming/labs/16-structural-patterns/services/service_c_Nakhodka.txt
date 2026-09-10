@@ -1,0 +1,4 @@
+name: Nakhodka
+temp_kelvin: 291.0
+wind_kmh: 25.6
+humidity_percent: 76

@@ -1,0 +1,4 @@
+city=Nakhodka
+temperature_c=17.9
+wind_ms=7.1
+humidity=76

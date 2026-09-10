@@ -1,0 +1,3 @@
+city=Vladivostok
+temperature_c=18.5
+humidity=72

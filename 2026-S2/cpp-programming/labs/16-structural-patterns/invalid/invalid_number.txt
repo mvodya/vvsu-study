@@ -1,0 +1,4 @@
+name: Vladivostok
+temp_kelvin: warm
+wind_kmh: 22.3
+humidity_percent: 72

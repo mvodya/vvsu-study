@@ -1,0 +1,4 @@
+name: Artem
+temp_kelvin: 293.2
+wind_kmh: 18.0
+humidity_percent: 64

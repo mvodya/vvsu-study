@@ -1,0 +1,4 @@
+city=Artem
+temperature_c=20.1
+wind_ms=5.0
+humidity=64

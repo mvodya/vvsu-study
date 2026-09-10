@@ -1,0 +1,4 @@
+name: Ussuriysk
+temp_kelvin: 292.8
+wind_kmh: 16.2
+humidity_percent: 68
