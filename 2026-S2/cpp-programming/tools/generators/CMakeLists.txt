@@ -1,3 +1,6 @@
 add_subdirectory(01-cpp-foundations)
 add_subdirectory(03-lifetime-raii)
 add_subdirectory(04-polymorphism)
+add_subdirectory(05-function-templates)
+add_subdirectory(07-error-handling)
+add_subdirectory(08-sequence-containers)

@@ -28,4 +28,7 @@ if [[ "$RUN_GENERATORS" -eq 1 ]]; then
     "$BUILD_DIR/generators/01-cpp-foundations/generate_lab_01_data" "$LABS_DIR/01-cpp-foundations"
     "$BUILD_DIR/generators/03-lifetime-raii/generate_lab_03_data" "$LABS_DIR/03-lifetime-raii"
     "$BUILD_DIR/generators/04-polymorphism/generate_lab_04_data" "$LABS_DIR/04-polymorphism"
+    "$BUILD_DIR/generators/05-function-templates/generate_lab_05_data" "$LABS_DIR/05-function-templates"
+    "$BUILD_DIR/generators/07-error-handling/generate_lab_07_data" "$LABS_DIR/07-error-handling"
+    "$BUILD_DIR/generators/08-sequence-containers/generate_lab_08_data" "$LABS_DIR/08-sequence-containers"
 fi
