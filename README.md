@@ -9,11 +9,6 @@
 - [БИС-25-1](2026-S2/cpp-programming/README.md)
 - [БИС-25-2](2026-S2/cpp-programming/README.md)
 
-### Введение в анализ больших данных
-
-- [БИН-24-1](2026-S2/big-data/README.md)
-- [БИН-24-2](2026-S2/big-data/README.md)
-
 ### Информатика и основы программирования
 
 - [БИС-26-1](2026-S2/cs-programming/README.md)
@@ -43,6 +38,6 @@
     - [3D Моделирование для профессиональной деятельности 2026](https://github.com/mvodya/3d-course-blender/tree/2026S1)
   - Весенний семестр (S2)
     - [Объектно-ориентированное программирование](2026-S2/cpp-programming/README.md)
-    - [Введение в анализ больших данных](2026-S2/big-data/README.md)
+    - [Анализ сигналов и изображений](2026-S2/signal-image-analysis/README.md)
     - [Информатика и основы программирования](2026-S2/cs-programming/README.md)
     - [Веб-программирование](2026-S2/web-programming/README.md)
