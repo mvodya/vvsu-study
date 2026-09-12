@@ -7,15 +7,19 @@ REPO_ROOT="$(cd "$SCRIPT_DIR/.." && pwd -P)"
 BUILD_DIR="$SCRIPT_DIR/build"
 LABS_DIR="${CPP_COURSE_LABS_DIR:-$REPO_ROOT/labs}"
 RUN_GENERATORS=0
+BUILD_PDF=0
 
 for ARGUMENT in "$@"; do
     case "$ARGUMENT" in
         --generate)
             RUN_GENERATORS=1
             ;;
+        --pdf)
+            BUILD_PDF=1
+            ;;
         *)
             printf 'Unknown argument: %s\n' "$ARGUMENT" >&2
-            printf 'Usage: %s [--generate]\n' "$0" >&2
+            printf 'Usage: %s [--generate] [--pdf]\n' "$0" >&2
             exit 1
             ;;
     esac
@@ -36,4 +40,8 @@ if [[ "$RUN_GENERATORS" -eq 1 ]]; then
     "$BUILD_DIR/generators/11-iterators-ranges/generate_lab_11_data" "$LABS_DIR/11-iterators-ranges"
     "$BUILD_DIR/generators/15-behavioral-patterns/generate_lab_15_data" "$LABS_DIR/15-behavioral-patterns"
     "$BUILD_DIR/generators/16-structural-patterns/generate_lab_16_data" "$LABS_DIR/16-structural-patterns"
+fi
+
+if [[ "$BUILD_PDF" -eq 1 ]]; then
+    "$BUILD_DIR/md-to-pdf/md_to_pdf" "$LABS_DIR" "$SCRIPT_DIR/md-to-pdf/lab-template.typ" "$BUILD_DIR/md-to-pdf/typst" --compile --root "$REPO_ROOT"
 fi
