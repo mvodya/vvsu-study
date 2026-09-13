@@ -1,0 +1,10 @@
+*
+!*/
+!.gitignore
+!README.md
+!01-web-basics.md
+!02-html-content.md
+!labs/
+!labs/lab1.md
+!labs/lab2.md
+MANIFEST.md
