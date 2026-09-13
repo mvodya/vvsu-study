@@ -1,0 +1,10 @@
+/*
+!/.gitignore
+!/README.md
+!/01-python-foundations.md
+!/02-git.md
+!/labs/
+/labs/*
+!/labs/lab1.md
+!/labs/lab2.md
+/MANIFEST.md
