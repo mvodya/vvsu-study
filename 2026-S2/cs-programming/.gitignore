@@ -3,6 +3,10 @@
 !/README.md
 !/01-python-foundations.md
 !/02-git.md
+!/report-template/
+/report-template/*
+!/report-template/report.typ
+!/report-template/report.pdf
 !/labs/
 /labs/*
 !/labs/lab1.md

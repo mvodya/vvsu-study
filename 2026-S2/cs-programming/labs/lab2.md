@@ -129,3 +129,5 @@ merge: resolve lab 1 status
 ## Теория
 
 - [Git и Markdown](../02-git.md)
+
+К работе приложить [отчет по образцу](../report-template/report.pdf), оформленный по [СТО ВВГУ](https://thebandik.github.io/sto-rules/), с блок-схемами программ по ГОСТ 19.701-90 или ISO 5807:1985, текстами программ и их описанием
