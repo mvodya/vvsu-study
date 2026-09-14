@@ -12,3 +12,6 @@
 [submodule "2026-S1/3d-course-blender"]
 	path = 2026-S1/3d-course-blender
 	url = https://github.com/mvodya/3d-course-blender.git
+[submodule "extra/vvsu-report"]
+	path = extra/vvsu-report
+	url = https://github.com/mvodya/vvsu-report.git
