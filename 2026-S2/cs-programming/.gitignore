@@ -7,6 +7,7 @@
 /report-template/*
 !/report-template/report.typ
 !/report-template/report.pdf
+!/report-template/vvsu.typ
 !/labs/
 /labs/*
 !/labs/lab1.md
