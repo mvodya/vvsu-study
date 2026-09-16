@@ -12,7 +12,7 @@
 
 [Теория](02-html-content.md) // [Лабораторная работа 2](labs/lab2.md)
 
-### 3. Структура HTML-документа
+### 3. Структура многостраничного HTML-сайта
 
 TODO
 
@@ -24,7 +24,7 @@ TODO
 
 TODO
 
-### 6. Flexbox и CSS Grid
+### 6. Макет на Flexbox
 
 TODO
 
@@ -36,11 +36,15 @@ TODO
 
 TODO
 
-### 9. Tailwind CSS через CDN
+### 9. Проверка доступности страницы
 
 TODO
 
-### 10. Лендинг на Tailwind CSS
+### 10. Tailwind CSS через CDN
+
+TODO
+
+### 11. Лендинг на Tailwind CSS
 
 TODO
 
@@ -52,4 +56,5 @@ TODO
 - 4.  CSS: базовые стили - TODO
 - 5.  CSS: построение макета - TODO
 - 6.  Адаптивная верстка на CSS - TODO
-- 7.  Tailwind CSS - TODO
+- 7.  Доступность веб-интерфейсов - TODO
+- 8.  Tailwind CSS - TODO
