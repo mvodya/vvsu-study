@@ -17,7 +17,7 @@ int main() {
 
 `return 0` сообщает операционной системе об успешном завершении программы (см. [exit коды для Linux](https://man7.org/linux/man-pages/man3/sysexits.h.3head.html)).
 
-Тело функции состоит из statements:
+Тело функции состоит из инструкций (statements):
 
 ```cpp
 int value = 10;
@@ -25,7 +25,7 @@ value = value + 5;
 std::cout << value << '\n';
 ```
 
-Expression вычисляет значение:
+Выражение (expression) вычисляет значение:
 
 ```cpp
 value + 5
@@ -33,7 +33,7 @@ value > 10
 value * 2
 ```
 
-Имена переменных, функций и типов действуют внутри определенного scope.
+Имена переменных, функций и типов действуют внутри определенной области видимости (scope).
 
 ```cpp
 int main() {
@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-Фигурные скобки создают новый блок и новый scope.
+Фигурные скобки создают новый блок и новую область видимости.
 
 ## Базовые типы
 
@@ -101,7 +101,7 @@ double value{12.5};
 bool active{true};
 ```
 
-Форма `{}` позволяет компилятору диагностировать narrowing conversion:
+Форма `{}` позволяет компилятору обнаружить сужающее преобразование (narrowing conversion), при котором значение может потерять часть данных:
 
 ```cpp
 double source{12.5};
@@ -136,7 +136,7 @@ const double taxRate = 0.2;
 
 ## auto
 
-`auto` позволяет компилятору вывести тип из initializer:
+`auto` позволяет компилятору определить тип по начальному значению:
 
 ```cpp
 auto count = 10;        // int
@@ -282,15 +282,15 @@ int result = square(5);
 
 `5` является аргументом вызова.
 
-### Declaration и definition
+### Объявление и определение
 
-Declaration сообщает компилятору имя функции, тип результата и параметры:
+Declaration (объявление) сообщает компилятору имя функции, тип результата и параметры:
 
 ```cpp
 double average(double first, double second);
 ```
 
-Definition содержит тело функции:
+Definition (определение) содержит тело функции:
 
 ```cpp
 double average(double first, double second) {
@@ -298,7 +298,7 @@ double average(double first, double second) {
 }
 ```
 
-Declaration позволяет вызвать функцию из translation unit, где ее definition располагается в другом файле.
+Объявление позволяет вызвать функцию, тело которой находится в другом `.cpp` файле.
 
 ### Перегрузка функций
 
@@ -376,9 +376,9 @@ std::string line;
 std::getline(std::cin, line);
 ```
 
-Оператор `>>` читает форматированное значение. Для строки чтение завершается на whitespace.
+Оператор `>>` читает форматированное значение. Для строки чтение завершается на пробельном символе: пробеле, табуляции или переводе строки.
 
-`std::getline` читает строку до символа перевода строки либо до указанного delimiter.
+`std::getline` читает строку до символа перевода строки либо до указанного разделителя.
 
 ## struct
 
@@ -392,7 +392,7 @@ struct Book {
 };
 ```
 
-Создание объекта через aggregate initialization:
+Агрегатная инициализация задает значения полей по порядку их объявления:
 
 ```cpp
 Book book{"Dune", 1965, 4.8};
@@ -419,7 +419,7 @@ struct Segment {
 };
 ```
 
-Это пример composition.
+Это пример композиции: объект `Segment` содержит два объекта `Point`.
 
 ## enum class
 
@@ -462,7 +462,7 @@ case Direction::West:
 }
 ```
 
-`enum class` сохраняет значения внутри собственного scope:
+К значениям `enum class` обращаются через имя перечисления:
 
 ```cpp
 Direction::North
@@ -504,7 +504,7 @@ std::cerr << "File error\n";
 
 `'\n'` добавляет перевод строки.
 
-`std::endl` добавляет перевод строки и выполняет flush потока.
+`std::endl` добавляет перевод строки и сбрасывает буфер потока: накопленный вывод передается дальше, например в терминал.
 
 ## Работа с файлами
 
@@ -580,14 +580,14 @@ output.close();
 
 ### Пути к файлам
 
-Относительный путь вычисляется от current working directory процесса:
+Относительный путь вычисляется от текущей рабочей папки процесса:
 
 ```cpp
 std::ifstream input{"data.txt"};
 std::ifstream input2{"input/data.txt"};
 ```
 
-При запуске программы из IDE current working directory задается конфигурацией запуска.
+При запуске программы из IDE текущая рабочая папка задается настройками запуска.
 
 ## Чтение структурированных данных
 
@@ -634,7 +634,7 @@ while (std::getline(input, line)) {
 }
 ```
 
-Этот подход удобен, когда дальнейший parsing выполняется отдельно.
+Этот подход удобен, когда парсинг - разбор строки на отдельные значения - выполняется отдельно.
 
 ## std::istringstream
 
@@ -660,7 +660,7 @@ int count{};
 stream >> code >> value >> count;
 ```
 
-Построчный parsing файла:
+Построчный парсинг файла:
 
 ```cpp
 std::ifstream input{"data.txt"};
@@ -680,9 +680,9 @@ while (std::getline(input, line)) {
 }
 ```
 
-Такой способ разделяет чтение файла и parsing конкретной строки.
+Такой способ разделяет чтение файла и парсинг конкретной строки.
 
-## Parsing с delimiter
+## Парсинг с разделителем
 
 Пусть строка имеет формат:
 
@@ -690,7 +690,7 @@ while (std::getline(input, line)) {
 alpha;42;18.75
 ```
 
-Поля можно извлечь через `std::getline` с delimiter:
+Поля можно извлечь через `std::getline` с разделителем:
 
 ```cpp
 std::string line = "alpha;42;18.75";
@@ -724,7 +724,7 @@ std::stod
 std::stold
 ```
 
-Для корректных учебных входных данных такого parsing достаточно.
+Для корректных учебных входных данных такого парсинга достаточно.
 
 ## Преобразование числового поля в bool
 
@@ -748,7 +748,7 @@ bool flag{static_cast<bool>(flagValue)};
 
 ## Namespace
 
-Namespace группирует связанные имена:
+Namespace (пространство имен) группирует связанные имена:
 
 ```cpp
 namespace math {
@@ -758,13 +758,13 @@ namespace math {
 }
 ```
 
-Вызов с qualified name:
+Вызов с полным именем, включающим пространство имен:
 
 ```cpp
 int value = math::square(5);
 ```
 
-`using` добавляет выбранное имя в текущий scope:
+`using` добавляет выбранное имя в текущую область видимости:
 
 ```cpp
 using math::square;
@@ -772,7 +772,7 @@ using math::square;
 int value = square(5);
 ```
 
-Namespace особенно полезен для типов и функций отдельной предметной области или библиотеки.
+Пространство имен удобно использовать для типов и функций одной библиотеки или части программы.
 
 ## Заголовочные и исходные файлы
 
@@ -825,9 +825,9 @@ int main() {
 
 Заголовочный файл содержит интерфейс модуля: объявления типов и функций.
 
-`.cpp` содержит definitions функций.
+`.cpp` содержит определения функций.
 
-`#pragma once` обеспечивает однократное включение содержимого заголовка в одну translation unit.
+`#pragma once` обеспечивает однократное включение содержимого заголовка при обработке одного исходного файла.
 
 ## #include
 
@@ -838,15 +838,15 @@ int main() {
 #include "math.hpp"
 ```
 
-Форма `<...>` обычно используется для стандартных и системных headers.
+Форма `<...>` обычно используется для стандартных и системных заголовочных файлов.
 
-Форма `"..."` обычно используется для headers проекта.
+Форма `"..."` обычно используется для заголовочных файлов проекта.
 
-Содержимое подключаемого header участвует в формировании translation unit.
+Препроцессор подставляет содержимое подключаемого заголовка в место директивы `#include`.
 
-## Preprocessor
+## Препроцессор
 
-Preprocessor работает с директивами, начинающимися с `#`.
+Препроцессор работает с директивами, начинающимися с `#`.
 
 Основные примеры:
 
@@ -855,7 +855,7 @@ Preprocessor работает с директивами, начинающими�
 #define APP_VERSION "1.0"
 ```
 
-Macro заменяет preprocessing tokens:
+Директива `#define` создает макрос. В этом примере препроцессор заменит `APP_VERSION` на `"1.0"`:
 
 ```cpp
 #define APP_VERSION "1.0"
@@ -863,9 +863,9 @@ Macro заменяет preprocessing tokens:
 std::cout << APP_VERSION << '\n';
 ```
 
-После preprocessing компилятор получает результат раскрытия `#include` и macros.
+После работы препроцессора компилятор получает код с раскрытыми `#include` и макросами.
 
-Результат preprocessing можно получить отдельно:
+Результат работы препроцессора можно получить отдельно:
 
 ```bash
 g++ -std=c++20 -E main.cpp -o main.i
@@ -879,16 +879,18 @@ const int maxItems = 100;
 
 ## Translation unit
 
-Каждый `.cpp` файл проходит preprocessing отдельно.
+Translation unit (единица трансляции, TU) - код одного исходного файла после обработки препроцессором, включая содержимое подключенных заголовков.
+
+Каждый `.cpp` файл обрабатывается отдельно и дает свою TU.
 
 Упрощенная схема:
 
 ```text
-source file
--> preprocessor
--> translation unit
--> compiler
--> object file
+исходный файл
+-> препроцессор
+-> TU
+-> компилятор
+-> объектный файл
 ```
 
 Для проекта:
@@ -898,30 +900,30 @@ main.cpp -> main.o
 math.cpp -> math.o
 ```
 
-Каждая translation unit компилируется самостоятельно.
+Каждая TU компилируется самостоятельно.
 
-Затем linker объединяет object files:
+Затем компоновщик (linker) объединяет объектные файлы в исполняемый файл:
 
 ```text
 main.o
 math.o
--> linker
--> executable
+-> компоновщик
+-> исполняемый файл
 ```
 
 Модель всей сборки:
 
 ```text
-source
--> preprocessing
--> translation unit
--> compilation
--> object file
--> linking
--> executable
+исходный файл
+-> обработка препроцессором
+-> TU
+-> компиляция
+-> объектный файл
+-> компоновка
+-> исполняемый файл
 ```
 
-Cppreference описывает C++ translation phases и отдельную обработку translation units.
+Подробные стадии преобразования исходного кода описаны в справочнике cppreference в разделе Phases of translation.
 
 ## Отдельная компиляция
 
@@ -932,9 +934,9 @@ g++ -std=c++20 -Wall -Wextra -Wpedantic -c main.cpp -o main.o
 g++ -std=c++20 -Wall -Wextra -Wpedantic -c math.cpp -o math.o
 ```
 
-Флаг `-c` выполняет компиляцию до object file.
+Флаг `-c` останавливает сборку на объектном файле.
 
-Linking:
+Компоновка:
 
 ```bash
 g++ main.o math.o -o app
@@ -954,17 +956,17 @@ clang++ -std=c++20 -c math.cpp -o math.o
 clang++ main.o math.o -o app
 ```
 
-Clang также разделяет preprocessing, compilation, assembly и linking на стадии, которыми управляет compiler driver.
+Команда `clang++` управляет стадиями сборки: обработкой препроцессором, компиляцией, ассемблированием и компоновкой.
 
-## Declaration, definition и symbol
+## Объявление, определение и символ
 
-Declaration вводит имя и сообщает его тип:
+Объявление вводит имя и сообщает его тип:
 
 ```cpp
 int square(int value);
 ```
 
-Definition предоставляет реализацию:
+Определение содержит реализацию:
 
 ```cpp
 int square(int value) {
@@ -972,7 +974,7 @@ int square(int value) {
 }
 ```
 
-При компиляции функций и глобальных объектов создаются symbols, которые linker использует для связывания translation units.
+При компиляции сведения об именах функций и глобальных объектов попадают в объектные файлы. Эти имена называют символами (symbols). По ним компоновщик связывает вызов функции из одной TU с ее определением в другой.
 
 Например:
 
@@ -984,9 +986,9 @@ math.cpp
 -> определяет math::square
 ```
 
-Linker связывает вызов с соответствующей definition.
+Компоновщик связывает вызов с соответствующим определением.
 
-## Linker errors
+## Ошибки компоновки
 
 ### undefined reference
 
@@ -998,11 +1000,11 @@ g++ main.o -o app
 
 `main.o` содержит вызов `math::square`.
 
-Definition `math::square` находится в `math.o`.
+Определение `math::square` находится в `math.o`.
 
-При таком наборе входных файлов linker сообщает `undefined reference`.
+При таком наборе входных файлов компоновщик сообщает `undefined reference`. В зависимости от инструментов сообщение может также содержать `undefined symbol`.
 
-Корректная команда включает оба object files:
+Корректная команда включает оба объектных файла:
 
 ```bash
 g++ main.o math.o -o app
@@ -1010,20 +1012,20 @@ g++ main.o math.o -o app
 
 ### multiple definition
 
-Если два object files содержат обычную definition одной функции с external linkage:
+Если два объектных файла содержат определения одной и той же обычной функции, доступной из других файлов:
 
 ```text
-first.o -> definition process()
-second.o -> definition process()
+first.o -> определение process()
+second.o -> определение process()
 ```
 
-linker получает несколько definitions одного symbol и сообщает `multiple definition`.
+компоновщик получает несколько определений одного символа и сообщает `multiple definition` или `duplicate symbol`.
 
 ## One Definition Rule
 
-One Definition Rule задает правила количества definitions сущностей программы.
+One Definition Rule (правило одного определения, ODR) задает, где и сколько раз можно определять функции, переменные и типы.
 
-Для обычной функции с external linkage программа содержит одну definition:
+Для обычной функции, доступной из других файлов, программа содержит одно определение:
 
 ```cpp
 int process(int value) {
@@ -1031,13 +1033,13 @@ int process(int value) {
 }
 ```
 
-Declaration может встречаться в нескольких translation units через header:
+Объявление может встречаться в нескольких TU через заголовочный файл:
 
 ```cpp
 int process(int value);
 ```
 
-`inline` позволяет размещать одинаковую definition функции в header:
+`inline` позволяет размещать одинаковое определение функции в заголовочном файле:
 
 ```cpp
 inline int doubleValue(int value) {
@@ -1045,13 +1047,13 @@ inline int doubleValue(int value) {
 }
 ```
 
-Классы, структуры и перечисления обычно определяются в headers и включаются в несколько translation units.
+Классы, структуры и перечисления обычно определяются в заголовочных файлах и включаются в несколько TU.
 
-Подробное описание declarations, definitions и ODR:
+## Связывание имен
 
-## Linkage
+Связывание (linkage) определяет, могут ли объявления в разных TU обозначать одну и ту же функцию или переменную.
 
-Функция в namespace scope обычно имеет external linkage:
+Обычная функция, объявленная вне других функций, имеет внешнее связывание (external linkage):
 
 ```cpp
 int calculate(int value) {
@@ -1059,9 +1061,9 @@ int calculate(int value) {
 }
 ```
 
-Такой symbol может участвовать в linking между translation units.
+Такую функцию можно объявить и вызвать в другом `.cpp` файле.
 
-Unnamed namespace задает internal linkage:
+Безымянное пространство имен задает внутреннее связывание (internal linkage):
 
 ```cpp
 namespace {
@@ -1073,13 +1075,13 @@ int helper(int value) {
 }
 ```
 
-`helper` принадлежит одной translation unit.
+Имя `helper` относится к функции только внутри этой TU.
 
-Internal linkage удобно для вспомогательных сущностей реализации конкретного `.cpp`.
+Внутреннее связывание удобно для вспомогательных функций конкретного `.cpp` файла.
 
-## Ошибки компиляции, warnings и linker errors
+## Ошибки и предупреждения при сборке
 
-Compiler diagnostic может сообщать о синтаксисе, типах и других свойствах исходного кода.
+Сообщение компилятора может указывать на ошибку в синтаксисе, типах и других частях исходного кода.
 
 Пример ошибки компиляции:
 
@@ -1087,7 +1089,7 @@ Compiler diagnostic может сообщать о синтаксисе, тип�
 int value{"text"};
 ```
 
-Warning сообщает о подозрительной конструкции, для которой compiler продолжает обработку.
+Предупреждение (warning) сообщает о подозрительной конструкции. При обычных настройках компилятор продолжает сборку после предупреждения.
 
 Полезный набор для GCC и Clang:
 
@@ -1103,41 +1105,41 @@ Warning сообщает о подозрительной конструкции,
 g++ -std=c++20 -Wall -Wextra -Wpedantic main.cpp
 ```
 
-GCC содержит эти флаги среди основных warning options.
+Эти флаги включают дополнительные предупреждения компилятора.
 
-Linker diagnostics относятся к symbols и связи между object files:
+Сообщения компоновщика относятся к символам и связям между объектными файлами:
 
 ```text
 undefined reference
 multiple definition
 ```
 
-## Базовая работа с debugger
+## Базовая работа с отладчиком
 
-Debugger позволяет остановить выполнение программы в выбранной точке и изучить ее состояние.
+Отладчик (debugger) позволяет остановить выполнение программы в выбранной точке и изучить ее состояние.
 
 Основные операции:
 
 ```text
-breakpoint
+точка останова
 -> запуск
 -> остановка
 -> просмотр переменных
 -> выполнение по шагам
--> просмотр call stack
+-> просмотр стек вызовов
 ```
 
-Breakpoint ставится на строку исходного кода.
+Точка останова (breakpoint) ставится на строку исходного кода.
 
-Step over выполняет текущую строку.
+Step over выполняет текущую строку целиком, включая вызванные функции.
 
-Step into входит внутрь вызываемой функции.
+Step into входит внутрь вызываемой функции для выполнения по шагам.
 
-Call stack показывает цепочку активных вызовов функций.
+Стек вызовов (call stack) показывает цепочку активных вызовов функций.
 
 Просмотр значений переменных помогает отслеживать изменение состояния программы.
 
-Для добавления debug information GCC и Clang поддерживают флаг:
+Для добавления отладочной информации GCC и Clang поддерживают флаг:
 
 ```bash
 -g
@@ -1151,10 +1153,10 @@ g++ -std=c++20 -g main.cpp -o app
 
 ## Справочные материалы
 
-- C++ language reference: [cppreference - C++ language](https://en.cppreference.com/cpp/language)
+- Справочник языка C++: [cppreference - C++ language](https://en.cppreference.com/cpp/language)
 - `std::string`: [cppreference - std::string](https://en.cppreference.com/cpp/string/basic_string)
 - Файловые потоки: [cppreference - std::basic_fstream](https://en.cppreference.com/cpp/io/basic_fstream)
-- Translation phases: [cppreference - Phases of translation](https://en.cppreference.com/cpp/language/translation_phases)
-- Declarations, definitions и ODR: [cppreference - Definitions and ODR](https://en.cppreference.com/cpp/language/definition)
-- GCC options: [GCC - Option Summary](https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html)
-- Clang compilation stages: [Clang Command Guide](https://clang.llvm.org/docs/CommandGuide/clang.html)
+- Стадии трансляции: [cppreference - Phases of translation](https://en.cppreference.com/cpp/language/translation_phases)
+- Объявления, определения и ODR: [cppreference - Definitions and ODR](https://en.cppreference.com/cpp/language/definition)
+- Параметры GCC: [GCC - Option Summary](https://gcc.gnu.org/onlinedocs/gcc/Option-Summary.html)
+- Стадии сборки Clang: [Clang Command Guide](https://clang.llvm.org/docs/CommandGuide/clang.html)
