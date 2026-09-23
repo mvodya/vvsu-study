@@ -6,11 +6,11 @@
 
 ### 1. Локальный веб-сервер и первая страница
 
-[Теория](01-web-basics.md) [CN](01-web-basics_cn.md) // [Лабораторная работа 1](labs/lab1.md) [CN](labs/lab1_cn.md)
+[Теория](01-web-basics.md) \[[CN](01-web-basics_cn.md)\] // [Лабораторная работа 1](labs/lab1.md) \[[CN](labs/lab1_cn.md)\]
 
 ### 2. Базовый HTML
 
-[Теория](02-html-content.md) // [Лабораторная работа 2](labs/lab2.md)
+[Теория](02-html-content.md) \[[CN](02-html-content_cn.md)\] // [Лабораторная работа 2](labs/lab2.md) \[[CN](labs/lab2_cn.md)\]
 
 ### 3. Структура многостраничного HTML-сайта
 
@@ -50,8 +50,8 @@ TODO
 
 ## Теория
 
-- [01. Интернет, HTTP и локальный веб-сервер](01-web-basics.md) [CN](01-web-basics_cn.md)
-- [02. HTML: содержимое документа](02-html-content.md)
+- [01. Интернет, HTTP и локальный веб-сервер](01-web-basics.md) \[[CN](01-web-basics_cn.md)\]
+- [02. HTML: содержимое документа](02-html-content.md) \[[CN](02-html-content_cn.md)\]
 - 3.  HTML: структура документа - TODO
 - 4.  CSS: базовые стили - TODO
 - 5.  CSS: построение макета - TODO
