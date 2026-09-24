@@ -1,0 +1,16 @@
+/MANIFEST.md
+/teacher/
+
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+
+outputs/
+
+# Эти лабы пока не доступны
+/labs/lab3/
+/labs/lab4/
+/labs/lab5/
+/labs/lab6/
+/labs/lab7/
+/labs/lab8/

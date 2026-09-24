@@ -1,0 +1,15 @@
+name: signal
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.14
+  - numpy=2.5.3
+  - scipy=1.18.1
+  - matplotlib=3.11.2
+  - jupyterlab=4.6.4
+  - ipykernel=7.3.0
+  - ipywidgets=8.1.9
+  - nbclient=0.11.0
+  - nbformat=5.11.1
+  - pip=26.2.1
