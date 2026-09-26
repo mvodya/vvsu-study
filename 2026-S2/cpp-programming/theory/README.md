@@ -2,7 +2,7 @@
 
 - [01. Основы C++ и модель компиляции](01-cpp-foundations.md)
 - [02. Классы и value types](02-value-types.md)
-- [03. Lifetime, ownership и RAII - TODO]
+- [03. Lifetime, ownership и RAII](03-lifetime-raii.md)
 - [04. Наследование и runtime polymorphism - TODO]
 - [05. Шаблоны функций - TODO]
 - [06. Шаблоны классов и concepts - TODO]
