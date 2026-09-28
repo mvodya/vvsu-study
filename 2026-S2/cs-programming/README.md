@@ -32,7 +32,7 @@
 
 ### 3. Обработка строк
 
-TODO
+[Теория](03-strings.md) // [Лабораторная работа 3](labs/lab3.md)
 
 ### 4. Проверка условий
 
@@ -78,7 +78,7 @@ TODO
 
 - [01. Основы Python](01-python-foundations.md)
 - [02. Git и Markdown](02-git.md)
-- 03. Строки в Python - TODO
+- [03. Строки в Python](03-strings.md)
 - 04. Условия в Python - TODO
 - 05. Циклы в Python - TODO
 - 06. Списки и таблицы в Python - TODO
