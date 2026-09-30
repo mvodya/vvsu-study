@@ -12,9 +12,9 @@
 
 [Теория](02-html-content.md) \[[CN](02-html-content_cn.md)\] // [Лабораторная работа 2](labs/lab2.md) \[[CN](labs/lab2_cn.md)\]
 
-### 3. Структура многостраничного HTML-сайта
+### 03a. Структура многостраничного HTML-сайта
 
-TODO
+[Теория](03-html-structure.md) \[[CN](03-html-structure_cn.md)\] // [Лабораторная работа 03a](labs/lab03a.md) \[[CN](labs/lab03a_cn.md)\]
 
 ### 4. Таблицы и формы в HTML
 
@@ -52,7 +52,7 @@ TODO
 
 - [01. Интернет, HTTP и локальный веб-сервер](01-web-basics.md) \[[CN](01-web-basics_cn.md)\]
 - [02. HTML: содержимое документа](02-html-content.md) \[[CN](02-html-content_cn.md)\]
-- 3.  HTML: структура документа - TODO
+- [03. HTML: структура документа и таблицы](03-html-structure.md) \[[CN](03-html-structure_cn.md)\]
 - 4.  CSS: базовые стили - TODO
 - 5.  CSS: построение макета - TODO
 - 6.  Адаптивная верстка на CSS - TODO
