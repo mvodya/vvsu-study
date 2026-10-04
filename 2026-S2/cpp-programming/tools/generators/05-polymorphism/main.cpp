@@ -259,14 +259,14 @@ void writeParkingLog(const std::filesystem::path &filePath,
 // Get path from CLI args
 std::filesystem::path outputDirectoryFromArguments(int argc, char *argv[]) {
   if (argc > 2) {
-    throw std::runtime_error{"Usage: generate_lab_04_data [output-directory]"};
+    throw std::runtime_error{"Usage: generate_lab_05_data [output-directory]"};
   }
 
   if (argc == 2) {
     return argv[1];
   }
 
-  return std::filesystem::path{CPP_COURSE_LABS_DIR} / "04-polymorphism";
+  return std::filesystem::path{CPP_COURSE_LABS_DIR} / "05-polymorphism";
 }
 
 int main(int argc, char *argv[]) {

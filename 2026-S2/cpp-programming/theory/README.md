@@ -1,18 +1,45 @@
 # Теория
 
+Нумерация глав самостоятельная. Лабораторных работ - 16, тем теории в плане - 18.
+
 - [01. Основы C++ и модель компиляции](01-cpp-foundations.md)
 - [02. Классы и value types](02-value-types.md)
 - [03. Lifetime, ownership и RAII](03-lifetime-raii.md)
-- [04. Наследование и runtime polymorphism - TODO]
-- [05. Шаблоны функций - TODO]
-- [06. Шаблоны классов и concepts - TODO]
-- [07. Ошибки и исключения - TODO]
-- [08. Последовательные контейнеры - TODO]
-- [09. Ассоциативные и hash-контейнеры - TODO]
-- [10. Algorithms и lambdas - TODO]
-- [11. Итераторы, ranges и views - TODO]
-- [12. Threads - TODO]
-- [13. Синхронизация - TODO]
-- [14. Creational patterns - TODO]
-- [15. Behavioral patterns - TODO]
-- [16. Structural patterns - TODO]
+- [04. Перегрузка функций и преобразование типов](04-overloads-conversions.md)
+- [05. Наследование и виртуальные функции](05-inheritance-virtual.md)
+- [06. Статический и динамический полиморфизм](06-polymorphism.md)
+- 07. Шаблоны функций - TODO
+- 08. Шаблоны классов и concepts - TODO
+- 09. Ошибки и исключения - TODO
+- 10. Последовательные контейнеры - TODO
+- 11. Ассоциативные и hash-контейнеры - TODO
+- 12. Algorithms и lambdas - TODO
+- 13. Итераторы, ranges и views - TODO
+- 14. Threads - TODO
+- 15. Синхронизация - TODO
+- 16. Creational patterns - TODO
+- 17. Behavioral patterns - TODO
+- 18. Structural patterns - TODO
+
+## Теория перед лабораторной
+
+| Лабораторная | Новые главы перед работой |
+| --- | --- |
+| 01 | 01 |
+| 02 | 02 |
+| 03 | 03 |
+| 04 | 04 |
+| 05 | 05-06 |
+| 06 | 07-08 |
+| 07 | 09 |
+| 08 | 10 |
+| 09 | 11 |
+| 10 | 12 |
+| 11 | 13 |
+| 12 | 14 |
+| 13 | 15 |
+| 14 | 16 |
+| 15 | 17 |
+| 16 | 18 |
+
+Ранее пройденные главы сохраняются как предпосылки.

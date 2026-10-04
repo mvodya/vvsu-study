@@ -20,23 +20,19 @@
     - [temp_air_01.txt](03-lifetime-raii/temp_air_01.txt)
     - [temp_air_02.txt](03-lifetime-raii/temp_air_02.txt)
 
-- [04. Наследование и runtime polymorphism](04-polymorphism/)
-  - [README](04-polymorphism/README.md)
-  - [PDF](04-polymorphism/04-polymorphism.pdf)
-  - Файлы для лабы
-    - [parking_log.txt](04-polymorphism/parking_log.txt)
+- [04. Перегрузка функций и преобразование типов](04-overloads-conversions/)
+  - [README](04-overloads-conversions/README.md)
+  - [PDF](04-overloads-conversions/04-overloads-conversions.pdf)
+  - [weather_day.csv](04-overloads-conversions/weather_day.csv)
 
-- [05. Шаблоны функций](05-function-templates/)
-  - [README](05-function-templates/README.md)
-  - [PDF](05-function-templates/05-function-templates.pdf)
-  - Файлы для лабы
-    - [weather_day.csv](05-function-templates/weather_day.csv)
+- [05. Наследование и runtime polymorphism](05-polymorphism/)
+  - [README](05-polymorphism/README.md)
+  - [PDF](05-polymorphism/05-polymorphism.pdf)
+  - [parking_log.txt](05-polymorphism/parking_log.txt)
 
-- [06. Шаблоны классов и concepts](06-class-templates/)
+- [06. Шаблоны функций, классов и concepts](06-class-templates/)
   - [README](06-class-templates/README.md)
   - [PDF](06-class-templates/06-class-templates.pdf)
-  - Файлы для лабы
-    - Нет дополнительных файлов
 
 - [07. Ошибки и исключения](07-error-handling/)
   - [README](07-error-handling/README.md)
