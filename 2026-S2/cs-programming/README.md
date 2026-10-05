@@ -36,7 +36,7 @@
 
 ### 4. Проверка условий
 
-TODO
+[Теория](04-conditions.md) // [Лабораторная работа 4](labs/lab4.md)
 
 ### 5. Обработка последовательностей
 
@@ -79,7 +79,7 @@ TODO
 - [01. Основы Python](01-python-foundations.md)
 - [02. Git и Markdown](02-git.md)
 - [03. Строки в Python](03-strings.md)
-- 04. Условия в Python - TODO
+- [04. Условия в Python](04-conditions.md)
 - 05. Циклы в Python - TODO
 - 06. Списки и таблицы в Python - TODO
 - 07. Функции в Python - TODO
