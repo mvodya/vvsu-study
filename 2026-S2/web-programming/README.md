@@ -16,6 +16,10 @@
 
 [Теория](03-html-structure.md) \[[CN](03-html-structure_cn.md)\] // [Лабораторная работа 03a](labs/lab03a.md) \[[CN](labs/lab03a_cn.md)\]
 
+### 03b. Расписание занятий
+
+[Теория](03-html-structure.md#таблицы) \[[CN](03-html-structure_cn.md#表格)\] // [Лабораторная работа 03b](labs/lab03b.md) \[[CN](labs/lab03b_cn.md)\]
+
 ### 4. Таблицы и формы в HTML
 
 TODO

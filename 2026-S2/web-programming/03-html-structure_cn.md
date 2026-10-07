@@ -95,9 +95,9 @@ site/
   </thead>
   <tbody>
     <tr>
-      <td>09:00 - 10:30</td>
+      <td>08:30 - 10:00</td>
       <td><a href="subjects/drawing.html">素描</a></td>
-      <td>A-201</td>
+      <td>1410</td>
       <td>伊万诺娃·安娜·谢尔盖耶芙娜</td>
     </tr>
   </tbody>

@@ -95,9 +95,9 @@ site/
   </thead>
   <tbody>
     <tr>
-      <td>09:00 - 10:30</td>
+      <td>08:30 - 10:00</td>
       <td><a href="subjects/drawing.html">Рисунок</a></td>
-      <td>А-201</td>
+      <td>1410</td>
       <td>Иванова Анна Сергеевна</td>
     </tr>
   </tbody>
