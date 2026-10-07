@@ -8,7 +8,11 @@ __pycache__/
 outputs/
 
 # Эти лабы пока не доступны
-/labs/lab5/
-/labs/lab6/
 /labs/lab7/
 /labs/lab8/
+
+# Личные входные данные для работ с изображениями
+/labs/lab5/mydata/
+/labs/lab6/mydata/
+/labs/lab6/dataset/
+/labs/lab6/dataset.zip
