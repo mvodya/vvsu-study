@@ -87,7 +87,7 @@ public:
 };
 ```
 
-Virtual вызов pure virtual функции для создаваемого или разрушаемого объекта из конструктора или деструктора приводит к undefined behavior. Вызовы обязательных операций интерфейса выполняются после полного создания конкретного объекта
+Virtual вызов pure virtual функции из конструктора или деструктора для самого объекта приводит к undefined behavior. Вызовы обязательных операций интерфейса выполняются после полного создания конкретного объекта
 
 Интерфейс описывает доступные операции и их контракт. В C++ интерфейс часто представляется абстрактным классом с public pure virtual функциями и virtual destructor. Отдельное ключевое слово для интерфейса в этой форме записи отсутствует
 
@@ -156,7 +156,7 @@ void printAreaIfPresent(const Shape* shape) {
 }
 ```
 
-`Shape&` и `Shape*` в таких функциях предоставляют доступ к объекту. Ответственность за его lifetime остается у владельца. После разрушения фигуры сохраненная ссылка или указатель становится dangling. Разыменование dangling pointer приводит к undefined behavior
+`Shape&` и `Shape*` в таких функциях предоставляют доступ к объекту. Ответственность за его lifetime остается у владельца. После вызова деструктора фигуры сохраненная ссылка или указатель становится dangling. Разыменование dangling pointer приводит к undefined behavior
 
 ## Полиморфное владение и коллекции
 
@@ -284,7 +284,7 @@ for (const auto& item : drawing) {
 }
 ```
 
-`DrawingItem` использует Rule of Zero. Поле `unique_ptr` определяет семантику владения: объект поддерживает перемещение, попытка копирования вызывает ошибку компиляции. После перемещения исходный `DrawingItem` содержит пустой `shape_`. Вызов `area()` требует присутствия фигуры. Для перемещенного объекта доступны разрушение и присваивание нового значения перемещением
+`DrawingItem` использует Rule of Zero. Поле `unique_ptr` определяет семантику владения: объект поддерживает перемещение, попытка копирования вызывает ошибку компиляции. После перемещения исходный `DrawingItem` содержит пустой `shape_`. Вызов `area()` требует присутствия фигуры. Для перемещенного объекта допустимы вызов деструктора и присваивание нового значения перемещением
 
 Выбор связи определяется моделью: `Circle` является `Shape`, `DrawingItem` содержит `Shape`. Public inheritance подходит для взаимозаменяемых реализаций общего контракта. Composition подходит для объединения самостоятельных частей и делегирования операций
 
@@ -384,7 +384,7 @@ std::cout << (typeid(shapeReference) == typeid(Circle)) << '\n'; // 1
 - Virtual функции и `override`: [C++ draft - Virtual functions](https://eel.is/c++draft/class.virtual)
 - Абстрактные классы: [C++ draft - Abstract classes](https://eel.is/c++draft/class.abstract)
 - Порядок инициализации: [C++ draft - Initializing bases and members](https://eel.is/c++draft/class.base.init)
-- Поведение при создании и разрушении: [C++ draft - Construction and destruction](https://eel.is/c++draft/class.cdtor)
+- Поведение в конструкторах и деструкторах: [C++ draft - Construction and destruction](https://eel.is/c++draft/class.cdtor)
 - Полиморфное удаление: [C++ Core Guidelines - C.35](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-non-virtual)
 - Slicing: [C++ Core Guidelines - C.67](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c67-a-polymorphic-class-should-suppress-public-copymove)
 - `std::unique_ptr`: [C++ draft - unique_ptr](https://eel.is/c++draft/unique.ptr)
