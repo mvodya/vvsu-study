@@ -40,7 +40,7 @@
 
 ### 5. Обработка последовательностей
 
-TODO
+[Теория](05-loops.md) // [Лабораторная работа 5](labs/lab5.md)
 
 ### 6. Численные алгоритмы
 
@@ -80,7 +80,7 @@ TODO
 - [02. Git и Markdown](02-git.md)
 - [03. Строки в Python](03-strings.md)
 - [04. Условия в Python](04-conditions.md)
-- 05. Циклы в Python - TODO
+- [05. Циклы в Python](05-loops.md)
 - 06. Списки и таблицы в Python - TODO
 - 07. Функции в Python - TODO
 - 08. Основные алгоритмы - TODO

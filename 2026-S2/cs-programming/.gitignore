@@ -5,6 +5,7 @@
 !/02-git.md
 !/03-strings.md
 !/04-conditions.md
+!/05-loops.md
 !/report-template/
 /report-template/*
 !/report-template/report.typ
@@ -16,4 +17,5 @@
 !/labs/lab2.md
 !/labs/lab3.md
 !/labs/lab4.md
+!/labs/lab5.md
 /MANIFEST.md
