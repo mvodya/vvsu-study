@@ -20,11 +20,11 @@
 
 [Теория](03-html-structure.md#таблицы) \[[CN](03-html-structure_cn.md#表格)\] // [Лабораторная работа 03b](labs/lab03b.md) \[[CN](labs/lab03b_cn.md)\]
 
-### 4. Таблицы и формы в HTML
+### 4. Первые стили CSS
 
-TODO
+[Теория](04-css-foundations.md) \[[CN](04-css-foundations_cn.md)\] // [Лабораторная работа 4](labs/lab4.md) \[[CN](labs/lab4_cn.md)\]
 
-### 5. Основы CSS
+### 5. Оформление страницы с помощью CSS
 
 TODO
 
@@ -57,7 +57,7 @@ TODO
 - [01. Интернет, HTTP и локальный веб-сервер](01-web-basics.md) \[[CN](01-web-basics_cn.md)\]
 - [02. HTML: содержимое документа](02-html-content.md) \[[CN](02-html-content_cn.md)\]
 - [03. HTML: структура документа и таблицы](03-html-structure.md) \[[CN](03-html-structure_cn.md)\]
-- 4.  CSS: базовые стили - TODO
+- [04. CSS: базовые стили и оформление элементов](04-css-foundations.md) \[[CN](04-css-foundations_cn.md)\]
 - 5.  CSS: построение макета - TODO
 - 6.  Адаптивная верстка на CSS - TODO
 - 7.  Доступность веб-интерфейсов - TODO
