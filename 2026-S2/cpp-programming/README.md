@@ -29,8 +29,8 @@
 - [04 - Перегрузка функций и преобразование типов](theory/04-overloads-conversions.md)
 - [05 - Наследование и виртуальные функции](theory/05-inheritance-virtual.md)
 - [06 - Статический и динамический полиморфизм](theory/06-polymorphism.md)
-- 07 - Шаблоны функций - TODO
-- 08 - Шаблоны классов и concepts - TODO
+- [07 - Шаблоны функций](theory/07-function-templates.md)
+- [08 - Шаблоны классов и concepts](theory/08-class-templates.md)
 - 09 - Ошибки и исключения - TODO
 - 10 - Последовательные контейнеры - TODO
 - 11 - Ассоциативные и hash-контейнеры - TODO
