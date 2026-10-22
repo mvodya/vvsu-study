@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS-фигуры</title>
+    <style>
+      body {
+        margin: 24px;
+        color: #172554;
+        background: white;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        font-size: 26px;
+      }
+      .gallery {
+        width: 720px;
+        font-size: 0;
+      }
+      figure {
+        display: inline-block;
+        vertical-align: top;
+        width: 220px;
+        height: 195px;
+        margin: 0 16px 16px 0;
+        padding: 14px;
+        box-sizing: border-box;
+        background: #f1f5f9;
+        border-radius: 12px;
+        font-size: 16px;
+      }
+      .stage {
+        height: 140px;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+      figcaption {
+        font-weight: bold;
+      }
+      .rectangle {
+        width: 140px;
+        height: 80px;
+        background-color: #2563eb;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        background-color: #d97706;
+        border-radius: 50%;
+      }
+      .ellipse {
+        width: 150px;
+        height: 80px;
+        background-color: #0f766e;
+        border-radius: 50%;
+      }
+      .triangle {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 100px solid #7c3aed;
+      }
+      .diamond {
+        width: 80px;
+        height: 80px;
+        background-color: #be185d;
+        transform: rotate(45deg);
+      }
+      .semicircle {
+        width: 120px;
+        height: 60px;
+        background-color: #0369a1;
+        border-radius: 60px 60px 0 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <figure>
+        <div class="stage"><div class="rectangle"></div></div>
+        <figcaption>Прямоугольник</figcaption>
+      </figure>
+      <figure>
+        <div class="stage"><div class="circle"></div></div>
+        <figcaption>Круг</figcaption>
+      </figure>
+      <figure>
+        <div class="stage"><div class="ellipse"></div></div>
+        <figcaption>Эллипс</figcaption>
+      </figure>
+      <figure>
+        <div class="stage"><div class="triangle"></div></div>
+        <figcaption>Треугольник</figcaption>
+      </figure>
+      <figure>
+        <div class="stage"><div class="diamond"></div></div>
+        <figcaption>Ромб</figcaption>
+      </figure>
+      <figure>
+        <div class="stage"><div class="semicircle"></div></div>
+        <figcaption>Полукруг</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

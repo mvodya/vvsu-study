@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Человек из div</title>
+    <style>
+      .person {
+        position: relative;
+        width: 240px;
+        height: 320px;
+        background-color: #eef2ff;
+      }
+      .head {
+        position: absolute;
+        top: 20px;
+        left: 80px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #fbbf24;
+      }
+      .eye {
+        position: absolute;
+        top: 28px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #1f2937;
+      }
+      .eye-left {
+        left: 20px;
+      }
+      .eye-right {
+        right: 20px;
+      }
+      .torso {
+        position: absolute;
+        top: 100px;
+        left: 115px;
+        width: 10px;
+        height: 110px;
+        background-color: #1f2937;
+      }
+      .arm,
+      .leg {
+        position: absolute;
+        width: 10px;
+        border-radius: 5px;
+        background-color: #1f2937;
+        transform-origin: top center;
+      }
+      .arm {
+        top: 12px;
+        left: 0;
+        height: 75px;
+      }
+      .arm-left {
+        transform: rotate(50deg);
+      }
+      .arm-right {
+        transform: rotate(-50deg);
+      }
+      .leg {
+        top: 100px;
+        left: 0;
+        height: 90px;
+      }
+      .leg-left {
+        transform: rotate(25deg);
+      }
+      .leg-right {
+        transform: rotate(-25deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="person"
+      role="img"
+      aria-label="Человек с круглой головой, двумя глазами, руками и ногами"
+    >
+      <div class="head">
+        <div class="eye eye-left"></div>
+        <div class="eye eye-right"></div>
+      </div>
+      <div class="torso">
+        <div class="arm arm-left"></div>
+        <div class="arm arm-right"></div>
+        <div class="leg leg-left"></div>
+        <div class="leg leg-right"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -24,9 +24,9 @@
 
 [Теория](04-css-foundations.md) \[[CN](04-css-foundations_cn.md)\] // [Лабораторная работа 4](labs/lab4.md) \[[CN](labs/lab4_cn.md)\]
 
-### 5. Оформление страницы с помощью CSS
+### 5. CSS: фигуры, бинго и расписание
 
-TODO
+[Теория](05-css-layout.md) \[[CN](05-css-layout_cn.md)\] // [Лабораторная работа 5](labs/lab5.md) \[[CN](labs/lab5_cn.md)\] - 2 пары
 
 ### 6. Макет на Flexbox
 
@@ -58,7 +58,7 @@ TODO
 - [02. HTML: содержимое документа](02-html-content.md) \[[CN](02-html-content_cn.md)\]
 - [03. HTML: структура документа и таблицы](03-html-structure.md) \[[CN](03-html-structure_cn.md)\]
 - [04. CSS: базовые стили и оформление элементов](04-css-foundations.md) \[[CN](04-css-foundations_cn.md)\]
-- 5.  CSS: построение макета - TODO
+- [05. CSS: построение макета](05-css-layout.md) \[[CN](05-css-layout_cn.md)\]
 - 6.  Адаптивная верстка на CSS - TODO
 - 7.  Доступность веб-интерфейсов - TODO
 - 8.  Tailwind CSS - TODO
