@@ -31,7 +31,7 @@
 - [06 - Статический и динамический полиморфизм](theory/06-polymorphism.md)
 - [07 - Шаблоны функций](theory/07-function-templates.md)
 - [08 - Шаблоны классов и concepts](theory/08-class-templates.md)
-- 09 - Ошибки и исключения - TODO
+- [09 - Ошибки и исключения](theory/09-error-handling.md)
 - 10 - Последовательные контейнеры - TODO
 - 11 - Ассоциативные и hash-контейнеры - TODO
 - 12 - Algorithms и lambdas - TODO
