@@ -2,8 +2,6 @@
 
 本材料介绍文档流、盒子的排列与嵌套、坐标、CSS 绘图以及表格数据的样式
 
-实验作业 5 需要文档流、inline-block、定位、图形和表格知识。Flexbox 与 Grid 章节供后续作业使用
-
 CSS 的引入、选择器、单位、颜色、字体、尺寸和状态详见[理论 04](04-css-foundations_cn.md)
 
 ## 目录
@@ -18,8 +16,8 @@ CSS 的引入、选择器、单位、颜色、字体、尺寸和状态详见[理
 - [旋转与变换原点](#旋转与变换原点)
 - [表格样式](#表格样式)
 - [多个页面共用 CSS](#多个页面共用-css)
-- [后续作业中的 Flexbox](#后续作业中的-flexbox)
-- [后续作业中的 Grid](#后续作业中的-grid)
+- [Flexbox](#flexbox)
+- [Grid](#grid)
 - [布局调试](#布局调试)
 
 ## 文档流与文档树
@@ -457,7 +455,7 @@ main {
 
 同一个外部文件可以同时修改所有页面的背景或标题颜色。仅在 `Styles` 面板中进行的修改是临时的；将修改写入文件，才能在刷新后保留
 
-## 后续作业中的 Flexbox
+## Flexbox
 
 Flexbox 适合沿一条主轴分配元素。在父元素上声明后，只有其直接子元素成为 flex 项目
 
@@ -495,7 +493,7 @@ Flexbox 适合沿一条主轴分配元素。在父元素上声明后，只有其
 
 `order` 和反向排列不会调整文档阅读顺序或键盘焦点顺序。先在 HTML 中安排合理的逻辑顺序，再设置外观
 
-## 后续作业中的 Grid
+## Grid
 
 Grid 同时定义行和列，适合按行、列对齐元素
 
@@ -520,6 +518,86 @@ Grid 同时定义行和列，适合按行、列对齐元素
 `justify-items` 和 `align-items` 设置网格单元内的项目对齐；容器有剩余空间时，`justify-content` 和 `align-content` 设置整个网格的对齐。网格中的各元素无需单独设置绝对坐标
 
 Flexbox 和 Grid 用于页面布局。课程表的表格数据使用 `table`
+
+### 嵌套容器
+
+一个块可以同时作为外层网格的项目和内部子元素的容器。例如，内容区域使用 Grid，内部的操作行使用 Flexbox
+
+```html
+<div class="content-layout">
+  <section class="content">主要内容</section>
+  <aside class="summary">
+    <p>简要信息</p>
+    <div class="actions">
+      <span>价格</span>
+      <button type="button">选择</button>
+    </div>
+  </aside>
+</div>
+```
+
+```css
+.content-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+```
+
+外层网格控制 `section` 和 `aside`，内部 flex 容器控制 `span` 和 `button`。`gap` 只作用于对应容器的直接项目之间
+
+### 网格中的图片
+
+```css
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.preview-grid img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.preview-grid .large-preview {
+  grid-column: 1 / -1;
+}
+```
+
+`-1` 表示显式网格的最后一条线，因此大图片占据所有列。`aspect-ratio` 设置宽高比；至少一个尺寸应由浏览器自动计算。`object-fit: cover` 填满盒子，可能裁掉图片边缘；`contain` 显示完整图片，可能留下空白条带
+
+### 等高卡片
+
+默认情况下，Grid 会将项目拉伸至所在行的高度。为了让文字长度不同的卡片底部对齐，可以在每张卡片内部使用纵向 Flexbox
+
+```css
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.card-footer {
+  margin-top: auto;
+  padding-top: 16px;
+}
+```
+
+自动上外边距吸收 flex 容器主轴上的剩余空间，将底部块推向卡片下边缘。这种对齐需要同一行的卡片具有相同高度；为网格设置 `align-items: start` 会取消拉伸
+
+按钮中的图标和文字可以通过 `display: inline-flex; align-items: center; gap: 8px` 排列。为图标指定尺寸和 `flex-shrink: 0`，使其在文字较长时保持形状
 
 ## 布局调试
 
