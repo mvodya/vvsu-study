@@ -30,7 +30,7 @@
 
 ### 6. Страница игры: Flexbox и Grid
 
-[Теория](05-css-layout.md#flexbox) \[[CN](05-css-layout_cn.md#flexbox)\] // [Лабораторная работа 6](labs/lab6.md) - 2 пары
+[Теория](05-css-layout.md#flexbox) \[[CN](05-css-layout_cn.md#flexbox)\] // [Лабораторная работа 6](labs/lab6.md) \[[CN](labs/lab6_cn.md)\] - 2 пары
 
 ### 7. Grid и состояния элементов
 
