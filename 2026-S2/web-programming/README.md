@@ -28,9 +28,9 @@
 
 [Теория](05-css-layout.md) \[[CN](05-css-layout_cn.md)\] // [Лабораторная работа 5](labs/lab5.md) \[[CN](labs/lab5_cn.md)\] - 2 пары
 
-### 6. Макет на Flexbox
+### 6. Страница игры: Flexbox и Grid
 
-TODO
+[Теория](05-css-layout.md#flexbox) \[[CN](05-css-layout_cn.md#flexbox)\] // [Лабораторная работа 6](labs/lab6.md) - 2 пары
 
 ### 7. Grid и состояния элементов
 
