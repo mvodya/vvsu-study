@@ -2,17 +2,17 @@
 
 Нумерация глав самостоятельная. Лабораторных работ - 16, тем теории в плане - 18.
 
-- [01. Основы C++ и модель компиляции](01-cpp-foundations.md)
-- [02. Классы и value types](02-value-types.md)
-- [03. Lifetime, ownership и RAII](03-lifetime-raii.md)
-- [04. Перегрузка функций и преобразование типов](04-overloads-conversions.md)
-- [05. Наследование и виртуальные функции](05-inheritance-virtual.md)
-- [06. Статический и динамический полиморфизм](06-polymorphism.md)
-- [07. Шаблоны функций](07-function-templates.md)
-- [08. Шаблоны классов и concepts](08-class-templates.md)
-- [09. Ошибки и исключения](09-error-handling.md)
-- [10. Последовательные контейнеры](10-sequence-containers.md)
-- 11. Ассоциативные и hash-контейнеры - TODO
+- [01 Основы C++ и модель компиляции](01-cpp-foundations.md)
+- [02 Классы и value types](02-value-types.md)
+- [03 Lifetime, ownership и RAII](03-lifetime-raii.md)
+- [04 Перегрузка функций и преобразование типов](04-overloads-conversions.md)
+- [05 Наследование и виртуальные функции](05-inheritance-virtual.md)
+- [06 Статический и динамический полиморфизм](06-polymorphism.md)
+- [07 Шаблоны функций](07-function-templates.md)
+- [08 Шаблоны классов и concepts](08-class-templates.md)
+- [09 Ошибки и исключения](09-error-handling.md)
+- [10 Последовательные контейнеры](10-sequence-containers.md)
+- [11 Ассоциативные и hash-контейнеры](11-associative-containers.md)
 - 12. Algorithms и lambdas - TODO
 - 13. Итераторы, ranges и views - TODO
 - 14. Threads - TODO

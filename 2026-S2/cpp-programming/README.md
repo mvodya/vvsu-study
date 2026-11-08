@@ -33,7 +33,7 @@
 - [08 - Шаблоны классов и concepts](theory/08-class-templates.md)
 - [09 - Ошибки и исключения](theory/09-error-handling.md)
 - [10 - Последовательные контейнеры](theory/10-sequence-containers.md)
-- 11 - Ассоциативные и hash-контейнеры - TODO
+- [11 - Ассоциативные и hash-контейнеры](theory/11-associative-containers.md)
 - 12 - Algorithms и lambdas - TODO
 - 13 - Итераторы, ranges и views - TODO
 - 14 - Threads - TODO
