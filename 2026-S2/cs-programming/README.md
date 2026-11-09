@@ -52,7 +52,7 @@
 
 ### 8. Функции и декомпозиция
 
-TODO
+[Теория](07-functions.md) // [Лабораторная работа 8](labs/lab8.md)
 
 ### 9. Линейные алгоритмы
 
@@ -81,8 +81,8 @@ TODO
 - [03. Строки в Python](03-strings.md)
 - [04. Условия в Python](04-conditions.md)
 - [05. Циклы в Python](05-loops.md)
-- 06. Списки и таблицы в Python - TODO
-- 07. Функции в Python - TODO
+- [06. Списки и таблицы в Python](06-collections.md)
+- [07. Функции в Python](07-functions.md)
 - 08. Основные алгоритмы - TODO
 - 09. Обработка коллекций в Python - TODO
 - 10. Файлы, JSON и обработка ошибок - TODO

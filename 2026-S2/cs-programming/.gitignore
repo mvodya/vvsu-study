@@ -7,6 +7,7 @@
 !/04-conditions.md
 !/05-loops.md
 !/06-collections.md
+!/07-functions.md
 !/report-template/
 /report-template/*
 !/report-template/report.typ
@@ -21,4 +22,5 @@
 !/labs/lab5.md
 !/labs/lab6.md
 !/labs/lab7.md
+!/labs/lab8.md
 /MANIFEST.md
