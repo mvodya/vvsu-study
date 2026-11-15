@@ -13,7 +13,7 @@
 - [09 Ошибки и исключения](09-error-handling.md)
 - [10 Последовательные контейнеры](10-sequence-containers.md)
 - [11 Ассоциативные и hash-контейнеры](11-associative-containers.md)
-- 12. Algorithms и lambdas - TODO
+- [12. Стандартные алгоритмы и лямбды](12-algorithms-lambdas.md)
 - 13. Итераторы, ranges и views - TODO
 - 14. Threads - TODO
 - 15. Синхронизация - TODO

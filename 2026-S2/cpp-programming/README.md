@@ -13,7 +13,7 @@
 - [07 - Ошибки и исключения](labs/07-error-handling/)
 - [08 - Последовательные контейнеры](labs/08-sequence-containers/)
 - [09 - Ассоциативные и hash-контейнеры](labs/09-associative-containers/)
-- [10 - Algorithms и lambdas](labs/10-algorithms-lambdas/)
+- [10 - Алгоритмы и лямбды](labs/10-algorithms-lambdas/)
 - [11 - Итераторы, ranges и views](labs/11-iterators-ranges/)
 - [12 - Threads](labs/12-concurrency/)
 - [13 - Синхронизация](labs/13-synchronization/)
@@ -34,7 +34,7 @@
 - [09 - Ошибки и исключения](theory/09-error-handling.md)
 - [10 - Последовательные контейнеры](theory/10-sequence-containers.md)
 - [11 - Ассоциативные и hash-контейнеры](theory/11-associative-containers.md)
-- 12 - Algorithms и lambdas - TODO
+- [12 - Стандартные алгоритмы и лямбды](theory/12-algorithms-lambdas.md)
 - 13 - Итераторы, ranges и views - TODO
 - 14 - Threads - TODO
 - 15 - Синхронизация - TODO

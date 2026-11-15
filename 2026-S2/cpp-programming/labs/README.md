@@ -60,11 +60,11 @@
   - Файлы для лабы
     - [access.log](09-associative-containers/access.log)
 
-- [10. Algorithms и lambdas](10-algorithms-lambdas/)
+- [10. Алгоритмы и лямбды](10-algorithms-lambdas/)
   - [README](10-algorithms-lambdas/README.md)
   - [PDF](10-algorithms-lambdas/10-algorithms-lambdas.pdf)
   - Файлы для лабы
-    - [films.csv](10-algorithms-lambdas/films.csv)
+    - [titles.tsv](10-algorithms-lambdas/titles.tsv)
 
 - [11. Итераторы, ranges и views](11-iterators-ranges/)
   - [README](11-iterators-ranges/README.md)
