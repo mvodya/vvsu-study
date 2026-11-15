@@ -1,0 +1,119 @@
+tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
+tt0113568	movie	Ghost in the Shell	Kôkaku kidôtai	0	1995	\N	83	Action,Animation,Crime
+tt0213338	tvSeries	Cowboy Bebop	Kaubôi bibappu	0	1998	1999	24	Action,Adventure,Animation
+tt0346314	tvSeries	Ghost in the Shell: Stand Alone Complex	Kôkaku Kidôtai Sutando Arôn Conpurekkusu	0	2002	2005	24	Action,Animation,Crime
+tt0434706	tvSeries	Monster	Monster	0	2004	2005	24	Animation,Crime,Drama
+tt0439572	movie	The Flash	The Flash	0	2023	\N	144	Action,Adventure,Fantasy
+tt0500092	tvMiniSeries	Serial Experiments Lain	Serial Experiments Lain	0	1998	1998	24	Animation,Drama,Horror
+tt0791205	tvSeries	Ergo Proxy	Ergo Proxy	0	2006	2006	27	Action,Adventure,Animation
+tt10048342	tvMiniSeries	The Queen's Gambit	The Queen's Gambit	0	2020	2020	60	Drama
+tt10366206	movie	John Wick: Chapter 4	John Wick: Chapter 4	0	2023	\N	169	Action,Crime,Thriller
+tt10574558	tvMiniSeries	Midnight Mass	Midnight Mass	0	2021	2021	60	Drama,Fantasy,Horror
+tt10676052	movie	The Fantastic Four: First Steps	The Fantastic Four: First Steps	0	2025	\N	115	Action,Adventure,Sci-Fi
+tt10795658	tvSeries	Alice in Borderland	Imawa no Kuni no Arisu	0	2020	2025	50	Action,Drama,Horror
+tt10872600	movie	Spider-Man: No Way Home	Spider-Man: No Way Home	0	2021	\N	148	Action,Adventure,Fantasy
+tt10919420	tvSeries	Squid Game	Ojing-eo geim	0	2021	2025	60	Action,Crime,Drama
+tt11126994	tvSeries	Arcane	Arcane: League of Legends	0	2021	2024	40	Action,Adventure,Animation
+tt11301886	movie	Rebel Ridge	Rebel Ridge	0	2024	\N	131	Action,Crime,Drama
+tt11389872	movie	Kingdom of the Planet of the Apes	Kingdom of the Planet of the Apes	0	2024	\N	145	Action,Adventure,Drama
+tt11564570	movie	Glass Onion	Glass Onion	0	2022	\N	139	Comedy,Crime,Drama
+tt1160419	movie	Dune	Dune: Part One	0	2021	\N	155	Action,Adventure,Drama
+tt11737520	tvSeries	One Piece	One Piece	0	2023	\N	60	Action,Adventure,Comedy
+tt12037194	movie	Furiosa: A Mad Max Saga	Furiosa: A Mad Max Saga	0	2024	\N	148	Action,Adventure,Sci-Fi
+tt12042730	movie	Project Hail Mary	Project Hail Mary	0	2026	\N	156	Adventure,Comedy,Sci-Fi
+tt12263384	movie	Extraction II	Extraction 2	0	2023	\N	122	Action,Crime,Thriller
+tt12590266	tvSeries	Cyberpunk: Edgerunners	Cyberpunk: Edgerunners	0	2022	\N	24	Action,Adventure,Animation
+tt13016388	tvSeries	3 Body Problem	3 Body Problem	0	2024	\N	60	Adventure,Drama,Fantasy
+tt1312171	tvSeries	The Umbrella Academy	The Umbrella Academy	0	2019	2024	60	Action,Adventure,Comedy
+tt13210838	tvSeries	The Gentlemen	The Gentlemen	0	2024	\N	50	Crime,Drama
+tt13293588	tvSeries	Mushoku Tensei: Jobless Reincarnation	Mushoku Tensei: Isekai Ittara Honki Dasu	0	2021	\N	24	Action,Adventure,Animation
+tt13309742	tvSeries	Blue Eye Samurai	Blue Eye Samurai	0	2023	\N	45	Action,Adventure,Animation
+tt13443470	tvSeries	Wednesday	Wednesday	0	2022	\N	45	Comedy,Crime,Fantasy
+tt13616990	tvSeries	Chainsaw Man	Chainsaw Man	0	2022	2022	24	Action,Animation,Fantasy
+tt13649112	tvMiniSeries	Baby Reindeer	Baby Reindeer	0	2024	2024	30	Biography,Comedy,Drama
+tt13706018	tvSeries	Spy x Family	Supai Famirî	0	2022	\N	24	Action,Animation,Comedy
+tt13718450	tvSeries	86	86	0	2021	2022	24	Action,Animation,Drama
+tt13851958	tvMiniSeries	Vivy: Fluorite Eye's Song	Vivy: Fluorite Eye's Song	0	2021	2021	25	Action,Adventure,Animation
+tt13918776	tvSeries	The Night Agent	The Night Agent	0	2023	2027	45	Action,Drama,Thriller
+tt14134550	tvSeries	Odd Taxi	Odd Taxi	0	2021	2021	23	Animation,Comedy,Crime
+tt14205554	movie	KPop Demon Hunters	K-Pop Demon Hunters	0	2025	\N	95	Action,Adventure,Animation
+tt14403178	tvSeries	Beef	Beef	0	2023	\N	30	Comedy,Drama
+tt14513804	movie	Captain America: Brave New World	Captain America: Brave New World	0	2025	\N	118	Action,Adventure,Sci-Fi
+tt14539740	movie	Godzilla X Kong: The New Empire	Godzilla x Kong: The New Empire	0	2024	\N	115	Action,Adventure,Fantasy
+tt1517268	movie	Barbie	Barbie	0	2023	\N	114	Adventure,Comedy,Fantasy
+tt15239678	movie	Dune: Part Two	Dune: Part Two	0	2024	\N	166	Action,Adventure,Drama
+tt15398776	movie	Oppenheimer	Oppenheimer	0	2023	\N	180	Biography,Drama,History
+tt15574124	movie	Peaky Blinders: The Immortal Man	Peaky Blinders: The Immortal Man	0	2026	\N	112	Crime,Drama,History
+tt1630029	movie	Avatar: The Way of Water	Avatar: The Way of Water	0	2022	\N	192	Action,Adventure,Fantasy
+tt16311594	movie	F1: The Movie	F1	0	2025	\N	155	Drama,Sport
+tt16428256	movie	Suzume	Suzume no Tojimari	0	2022	\N	122	Adventure,Animation,Drama
+tt17069148	tvSeries	Sakamoto Days	Sakamoto Deizu	0	2025	\N	24	Action,Adventure,Animation
+tt17158756	tvSeries	Bocchi the Rock!	Bocchi the Rock!	0	2022	2022	24	Animation,Comedy,Drama
+tt1745960	movie	Top Gun: Maverick	Top Gun: Maverick	0	2022	\N	130	Action,Drama
+tt1751634	tvSeries	The Sandman	The Sandman	0	2022	2025	45	Drama,Fantasy,Horror
+tt1757678	movie	Avatar: Fire and Ash	Avatar: Fire and Ash	0	2025	\N	197	Action,Adventure,Drama
+tt1825683	movie	Black Panther	Black Panther	0	2018	\N	134	Action,Adventure,Sci-Fi
+tt18259086	movie	Sonic the Hedgehog 3	Sonic the Hedgehog 3	0	2024	\N	110	Action,Adventure,Comedy
+tt18412256	movie	Alien: Romulus	Alien: Romulus	0	2024	\N	119	Horror,Sci-Fi,Thriller
+tt1877830	movie	The Batman	The Batman	0	2022	\N	176	Action,Crime,Mystery
+tt1910272	tvSeries	Steins; Gate	Steins;Gate	0	2011	2015	24	Animation,Comedy,Drama
+tt2069441	tvSeries	The Future Diary	Mirai nikki	0	2011	2013	25	Action,Animation,Comedy
+tt20969586	movie	Thunderbolts*	Thunderbolts*	0	2025	\N	127	Action,Adventure,Crime
+tt21209876	tvSeries	Solo Leveling	Ore dake Reberu Appu na Ken	0	2024	\N	\N	Action,Adventure,Animation
+tt2122656	tvSeries	Guilty Crown	Guilty Crown	0	2011	2012	23	Action,Animation,Crime
+tt21621494	tvSeries	Delicious in Dungeon	Danjon meshi	0	2024	\N	26	Adventure,Animation,Comedy
+tt21975436	tvSeries	Kaiju No. 8	Kaiju No. 8	0	2024	2025	24	Action,Adventure,Animation
+tt22022452	movie	Inside Out 2	Inside Out 2	0	2024	\N	96	Adventure,Animation,Comedy
+tt22084616	movie	Spider-Man: Brand New Day	Spider-Man: Brand New Day	0	2026	\N	145	Action,Adventure
+tt22248376	tvSeries	Frieren: Beyond Journey's End	Sôsô no Furîren	0	2023	\N	25	Adventure,Animation,Comedy
+tt22817632	tvSeries	Heavenly Delusion	Tengoku daimakyô	0	2023	2023	24	Adventure,Animation,Mystery
+tt2379308	tvSeries	Psycho-Pass	Psycho-Pass	0	2012	2019	25	Action,Animation,Crime
+tt26443616	movie	Hoppers	Hoppers	0	2026	\N	104	Adventure,Animation,Comedy
+tt26737616	tvMiniSeries	Pluto	Pluto	0	2023	2023	62	Action,Animation,Drama
+tt26743760	tvSeries	The Apothecary Diaries	Kusuriya no hitorigoto	0	2023	\N	23	Animation,Drama,History
+tt2707408	tvSeries	Narcos	Narcos	0	2015	2017	50	Biography,Crime,Drama
+tt27995113	tvSeries	Black Doves	Black Doves	0	2024	\N	55	Action,Drama,Mystery
+tt28650488	movie	The Super Mario Galaxy Movie	The Super Mario Galaxy Movie	0	2026	\N	98	Adventure,Animation,Comedy
+tt29355505	movie	Toy Story 5	Toy Story 5	0	2026	\N	102	Adventure,Animation,Comedy
+tt29623480	movie	The Wild Robot	The Wild Robot	0	2024	\N	102	Adventure,Animation,Family
+tt30217403	tvSeries	Dandadan	Dandadan	0	2024	\N	24	Action,Adventure,Animation
+tt30825738	movie	Star Wars: The Mandalorian and Grogu	The Mandalorian and Grogu	0	2026	\N	132	Action,Adventure,Family
+tt31036941	movie	Jurassic World: Rebirth	Jurassic World: Rebirth	0	2025	\N	133	Action,Adventure,Sci-Fi
+tt31193180	movie	Sinners	Sinners	0	2025	\N	137	Horror
+tt31806037	tvMiniSeries	Adolescence	Adolescence	0	2025	2025	60	Crime,Drama,Thriller
+tt32612521	tvSeries	Gachiakuta	Gachiakuta	0	2025	\N	24	Action,Adventure,Animation
+tt32642706	movie	The Rip	The Rip	0	2026	\N	113	Action,Crime,Drama
+tt33028568	tvSeries	The Summer Hikaru Died	Hikaru ga Shinda Natsu	0	2025	\N	\N	Animation,Drama,Horror
+tt33058180	tvSeries	From Bureaucrat to Villainess: Dad's Been Reincarnated!	Akuyaku Reijô Tensei Oji-san	0	2025	2025	\N	Animation,Comedy,Fantasy
+tt33310730	tvSeries	Medalist	Medarisuto	0	2025	\N	23	Animation,Drama,Sport
+tt33764258	movie	The Odyssey	The Odyssey	0	2026	\N	172	Action,Adventure,Drama
+tt3613454	tvMiniSeries	Terror in Resonance	Zankyô no teroru	0	2014	2014	23	Animation,Crime,Drama
+tt4154796	movie	Avengers: Endgame	Avengers: Endgame	0	2019	\N	186	Action,Adventure,Sci-Fi
+tt4574334	tvSeries	Stranger Things	Stranger Things	0	2016	2025	60	Drama,Fantasy,Horror
+tt4729430	movie	Klaus	Klaus	0	2019	\N	96	Adventure,Animation,Comedy
+tt4786824	tvSeries	The Crown	The Crown	0	2016	2023	60	Biography,Drama,History
+tt4869896	tvSeries	Overlord	Ôbârôdo	0	2015	2022	30	Action,Adventure,Animation
+tt5180504	tvSeries	The Witcher	The Witcher	0	2019	\N	60	Action,Adventure,Drama
+tt5232792	tvSeries	Lost in Space	Lost in Space	0	2018	2021	60	Adventure,Drama,Family
+tt5290382	tvSeries	Mindhunter	Mindhunter	0	2017	2019	60	Crime,Drama,Mystery
+tt5311514	movie	Your Name.	Kimi no na wa.	0	2016	\N	106	Animation,Drama,Fantasy
+tt5323662	movie	A Silent Voice: The Movie	Koe no katachi	0	2016	\N	130	Animation,Drama
+tt5370118	tvSeries	Konosuba: God's Blessing on This Wonderful World!	Kono subarashii sekai ni shukufuku o!	0	2016	2027	24	Adventure,Animation,Comedy
+tt5607616	tvSeries	Re: Zero - Starting Life in Another World	Re:Zero kara Hajimeru Isekai Seikatsu	0	2016	\N	24	Adventure,Animation,Drama
+tt5753856	tvSeries	Dark	Dark	0	2017	2020	60	Crime,Drama,Mystery
+tt5950044	movie	Superman	Superman	0	2025	\N	129	Action,Adventure,Sci-Fi
+tt6263850	movie	Deadpool & Wolverine	Deadpool & Wolverine	0	2024	\N	128	Action,Adventure,Comedy
+tt6587046	movie	The Boy and the Heron	Kimi-tachi wa dô ikiru ka	0	2023	\N	124	Adventure,Animation,Drama
+tt6718170	movie	The Super Mario Bros. Movie	The Super Mario Bros. Movie	0	2023	\N	92	Adventure,Animation,Comedy
+tt6763664	tvMiniSeries	The Haunting of Hill House	The Haunting of Hill House	0	2018	2018	60	Drama,Horror,Mystery
+tt6791350	movie	Guardians of the Galaxy Vol. 3	Guardians of the Galaxy Vol. 3	0	2023	\N	150	Action,Adventure,Comedy
+tt8740790	tvSeries	Bridgerton	Bridgerton	0	2020	\N	60	Drama,Romance
+tt8814476	movie	Supergirl	Supergirl	0	2026	\N	108	Action,Adventure,Sci-Fi
+tt8936646	movie	Extraction	Extraction	0	2020	\N	116	Action,Crime,Thriller
+tt9054364	tvSeries	That Time I Got Reincarnated as a Slime	Tensei Shitara Suraimu Datta Ken	0	2018	\N	25	Action,Adventure,Animation
+tt9114286	movie	Black Panther: Wakanda Forever	Black Panther: Wakanda Forever	0	2022	\N	161	Action,Adventure,Drama
+tt9319668	tvSeries	1899	1899	0	2022	2022	60	Adventure,Drama,Thriller
+tt9362722	movie	Spider-Man: Across the Spider-Verse	Spider-Man: Across the Spider-Verse	0	2023	\N	140	Action,Adventure,Animation
+tt9376612	movie	Shang-Chi and the Legend of the Ten Rings	Shang-Chi and the Legend of the Ten Rings	0	2021	\N	132	Action,Adventure,Fantasy
+tt9561862	tvSeries	Love, Death & Robots	Love, Death & Robots	0	2019	\N	15	Action,Adventure,Animation
+tt9603208	movie	Mission: Impossible - The Final Reckoning	Mission: Impossible - The Final Reckoning	0	2025	\N	169	Action,Adventure,Thriller
