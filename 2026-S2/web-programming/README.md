@@ -34,7 +34,7 @@
 
 ### 7. Адаптивное меню раменной
 
-[Лабораторная работа 7](labs/lab7.md) \[[CN](labs/lab7_cn.md)\] - 2 пары
+[Теория](06-responsive-css.md) \[[CN](06-responsive-css_cn.md)\] // [Лабораторная работа 7](labs/lab7.md) \[[CN](labs/lab7_cn.md)\] - 2 пары
 
 ### 8. Проверка доступности страницы
 
@@ -55,6 +55,6 @@ TODO
 - [03. HTML: структура документа и таблицы](03-html-structure.md) \[[CN](03-html-structure_cn.md)\]
 - [04. CSS: базовые стили и оформление элементов](04-css-foundations.md) \[[CN](04-css-foundations_cn.md)\]
 - [05. CSS: построение макета](05-css-layout.md) \[[CN](05-css-layout_cn.md)\]
-- 6.  Адаптивная верстка на CSS - TODO
+- [06. Адаптивная верстка на CSS](06-responsive-css.md) \[[CN](06-responsive-css_cn.md)\]
 - 7.  Доступность веб-интерфейсов - TODO
 - 8.  Tailwind CSS - TODO

@@ -8,6 +8,8 @@
 
 本实验安排两次课，每次为一个双课时
 
+请参考[理论 06：CSS 响应式布局](../06-responsive-css_cn.md)
+
 ## 第一次课 - 手机端菜单
 
 1. 创建项目，包含文件 `index.html`、`css/styles.css` 和存放图片的 `images/` 文件夹。在 `head` 中引入样式表，并使用 `<meta name="viewport" content="width=device-width, initial-scale=1">` 设置视口
