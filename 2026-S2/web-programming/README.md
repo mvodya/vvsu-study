@@ -32,23 +32,19 @@
 
 [Теория](05-css-layout.md#flexbox) \[[CN](05-css-layout_cn.md#flexbox)\] // [Лабораторная работа 6](labs/lab6.md) \[[CN](labs/lab6_cn.md)\] - 2 пары
 
-### 7. Grid и состояния элементов
+### 7. Адаптивное меню раменной
+
+[Лабораторная работа 7](labs/lab7.md) \[[CN](labs/lab7_cn.md)\] - 2 пары
+
+### 8. Проверка доступности страницы
 
 TODO
 
-### 8. Адаптивная верстка
+### 9. Tailwind CSS через CDN
 
 TODO
 
-### 9. Проверка доступности страницы
-
-TODO
-
-### 10. Tailwind CSS через CDN
-
-TODO
-
-### 11. Лендинг на Tailwind CSS
+### 10. Лендинг на Tailwind CSS
 
 TODO
 
